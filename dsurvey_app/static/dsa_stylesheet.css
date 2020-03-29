@@ -1,0 +1,57 @@
+#container{
+    width: 540px;
+    height: 435px;
+    background: linear-gradient(129deg, rgba(32,43,28,1) 0%, rgba(65,39,25,1) 100%);
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+#container h1{
+    text-align: center;
+    color: #585353;   
+}
+
+.main_content{
+    width: 530px;
+    height: 260px;
+    background: linear-gradient(129deg, rgba(0,0,0,1) 0%, rgba(11,88,32,1) 100%);
+    padding: 10px 5px;
+    text-align: center;
+    color: #585353;
+}
+
+
+.button{
+    width: 100px;
+    height: 25px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-left: 215px;
+    position: relative;
+    top: 65px;   
+}
+
+#r_container{
+    width: 540px;
+    height: 435px;
+    background: linear-gradient(129deg, rgba(0,0,0,1) 0%, rgba(11,88,32,1) 100%);
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+#r_container h1{
+    text-align: center;
+    color: #585353;
+}
+
+#r_container p{
+    text-align: center;
+    color: #585353;
+}
+
+#r_container h2{
+    text-align: center;
+    color: #585353;
+    margin-top: 100px;
+}

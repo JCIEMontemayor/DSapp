@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Project</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'dsa_stylesheet.css' %}">    
+    <script src="{% static 'dsa_script.js' %}"></script>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>Take the Dojo Survey</h1>
+
+        <div class="main_content">
+            <form class="form" action="/process" method="POST">
+                {% csrf_token %}
+                <h3>Ninja Name</h3><input class="name" type="text" name="name">
+                
+                <h3>Ninja Language</h3><select class="lang" name="language">
+                    <option value="python">Python</option>
+                    <option value="c#">C#</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+
+                <h3>Dojo Location</h3><select class="loca" name="location">
+                    <option value="sanjose">San Jose</option>
+                    <option value="seattle">Seattle</option>
+                    <option value="DC">DC</option>
+                    <option value="chicago">Chicago</option>
+                </select>
+
+                <input class="button" type="submit" value="Join Dojo">
+                
+            </form>
+
+        </div>
+        
+    </div>
+       
+</body>
+</html>
