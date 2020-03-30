@@ -13,9 +13,9 @@
 
     <div id="r_container">
         <h1>A new Ninja has joined the Dojo!</h1>
-        <p>Name: {{name}}</p>
-        <p>Location: {{loca}}</p>
-        <p>Language: {{lang}}</p>
+        <p>Name: {{request.session.name}}</p>
+        <p>Location: {{request.session.location}}</p>
+        <p>Language: {{request.session.language}}</p>
         <h2>!WELCOME!</h2>
     </div>   
     
